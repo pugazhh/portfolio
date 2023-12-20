@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e3e40c6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+ <!------------------------------start-header-------------------------------->
+     <header>
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="title-cart">Foodie</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href=""><span>H</span>ome</a></li>
+                <li><a href=""><span>C</span>ategories</a></li>
+                <li><a href=""><span>O</span>ffer</a></li>
+            </ul>
+            <div class="cart">
+                <div class="cart-no">0</div>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+     </header>
+ <!-------------------------------end-header-------------------------------->
+ <!-------------------------------cart-view---------------------------------->
+     <div class="cart-view ">
+        <div class="cart-title">Your <span> Cart List</span></div>
+        <div class="cart-product">
+        <div class="cart-item">
+            <img src="img/cake.jfif" alt="" height="70px"
+            width="100">
+            <div class="item-name">
+                <h4 class="title-cart">food name</h4>
+                <p>Rs.<span class="mul">150</span></p>
+            </div>
+            <div class="count">
+                <span class="minus">-</span>
+                <p class="num">1</p>
+                <span class="plus">+</span>
+            </div>
+            <div class="item-remove">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="img/pizza.jfif" alt="" height="70px"
+            width="100">
+            <div class="item-name">
+                <h4 class="title-cart">food name</h4>
+                <p>Rs.<span class="mul" >150</span></p>
+            </div>
+            <div class="count">
+                <span class="minus">-</span>
+                <p class="num">1</p>
+                <span class="plus">+</span>
+            </div>
+            <div class="item-remove">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="img/sandwitch.jfif" alt="" height="70px"
+            width="100">
+            <div class="item-name">
+                <h4 class="title-cart">food name</h4>
+                <p>Rs.<span class="mul">150</span></p>
+            </div>
+            <div class="count">
+                <span class="minus">-</span>
+                <p class="num">1</p>
+                <span class="plus">+</span>
+            </div>
+            <div class="item-remove">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+        <div>
+            <div class="cart-item">
+                <img src="img/pizza.jfif" alt="" height="70px"
+                width="100">
+                <div class="item-name">
+                    <h4 class="title-cart">food name</h4>
+                    <p>Rs.<span class="mul" >150</span></p>
+                </div>
+                <div class="count">
+                    <span class="minus">-</span>
+                    <p class="num">1</p>
+                    <span class="plus">+</span>
+                </div>
+                <div class="item-remove">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="cart-remove">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <div class="place-order">
+            <button>place order</button>
+            <h4>Total Rs.<span id="Total">200</span></h4>
+        </div>
+     </div>
+
+ <!--------------------------start-main-content------------------------------>
+     <div class="main-content">
+        <div class="title">your are hungury now so <span>let's order</span></div>
+        <div class="all-foods">
+
+            <!----------------------food-box-1----------------->
+            <div class="food-box">
+                <img src="img/blackberrydrinks.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                        <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-2----------------->
+            <div class="food-box">
+                <img src="img/briyani.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-3----------------->
+            <div class="food-box">
+                <img src="img/buncake.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-4----------------->
+            <div class="food-box">
+                <img src="img/burger.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-5----------------->
+            <div class="food-box">
+                <img src="img/cake.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-6----------------->
+            <div class="food-box">
+                <img src="img/chickengravy.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-7----------------->
+            <div class="food-box">
+                <img src="img/chickenleg.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-8----------------->
+            <div class="food-box">
+                <img src="img/cupcake.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-9----------------->
+            <div class="food-box">
+                <img src="img/dosaa.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-10----------------->
+            <div class="food-box">
+                <img src="img/noodle.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-11----------------->
+            <div class="food-box">
+                <img src="img/pastha.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-12----------------->
+            <div class="food-box">
+                <img src="img/pizza.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-13----------------->
+            <div class="food-box">
+                <img src="img/pongal.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-14----------------->
+            <div class="food-box">
+                <img src="img/puri.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-15----------------->
+            <div class="food-box">
+                <img src="img/rava.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-16----------------->
+            <div class="food-box">
+                <img src="img/samosa.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-17----------------->
+            <div class="food-box">
+                <img src="img/sandwitch.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-18----------------->
+            <div class="food-box">
+                <img src="img/vegroll.jfif" alt="" height="120px" width="160px" class="cart-img"  >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+             <!----------------------food-box-19----------------->
+             <div class="food-box">
+                <img src="img/briyani.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+            <!----------------------food-box-20----------------->
+            <div class="food-box">
+                <img src="img/buncake.jfif" alt="" height="120px" width="160px" class="cart-img" >
+                <div class="food-detail">
+                    <h4 class="title-cart">food name</h4>
+                    <div class="food-rate">
+                      <h4>RS. <span class="cart-rate">100</span></h4>
+                    </div>
+                </div>
+                <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+        </div>
+     </div>
+
+    <script src="script.js"></script>    
+</body>
+</html>

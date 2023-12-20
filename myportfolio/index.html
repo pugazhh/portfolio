@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c8e3e40c6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@1,500&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <nav data-aos="fade-down" data-aos-duration="1000">
+        <img src="logo.png" alt="" class="logo">
+        <ul id="sidemenu">
+            <li><a href="">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    </header>
+
+    <!-------------------home section--------------------->
+
+    
+    <div class="header">
+        <div class="container">
+           
+            <div class="header-text">
+               <div class="text"><p>Web <span>Designer</span></p>
+                <h1>Hello! I'm Pugazhendhi </h1></div> 
+            </div>
+        </div>
+    </div>
+    
+    <!---------------end home section----------------->
+
+     
+    <!-------------start about section----------------->
+
+    <div id="about" data-aos="fade-up" data-aos-offset="200">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/profile.jpg" alt="" height="500px" width="500px">
+                </div>
+                <div class="about-col-2" data-aos="fade-left" data-aos-duration="1000">
+                    <h1 class="sub-title">ABOUT <span style="color: rgb(234, 175, 102);">ME</span></h1>
+                    <p>Hi,I'm pugazhlendhi one year  goes to holds a bachelor of computer application from the university of madras.since 2022,I am worked as a freelancer and i worked freelancer as a web designer and some other works like video editing, photo editing and presentation</p>
+
+                    <div class="tab-titles">
+                            
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links " onclick="opentab('skill')">Skill</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                           
+                    </div>
+                    <div class="tab-contents  active-tab" id="education">
+                        <ul>
+                            <li><span>School</span><br> <i class="fa-solid fa-school"></i> &nbsp;Dawn matriculation school @ pattur,chennai</li>
+                            <li><span>College</span><br><i class="fa-solid fa-graduation-cap"></i>&nbsp;Sri muthukumaran Arts and science college - university of madras<br>UG Degree-Bachlor of computer application</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="skill">
+                        <ul>
+                            <li><span>UI/UX</span><br>designing web/app interfaces</li>
+                            <li><span>Programming language</span><br>Html-Css-Javascript</li>
+                            <li><span>Work Ethic</span><br>responsibility and reliability</li>
+                           
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>web designing</span><br>One year Experience of  freelancer</li>
+                           
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------service section-------------- -->
+
+    <div id="services" data-aos="fade-down" data-aos-offset="200">
+        <div class="container">
+            <h1 class="sub-titles">MY <span>SERVICES</span></h1>
+            <div class="services-list">
+                <div data-aos="flip-right" data-aos-offset="200" data-aos-duration="800">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p> plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div data-aos="flip-right" data-aos-offset="200" data-aos-duration="800">
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Edit</h2>
+                    <p>A Video Editor is tasked with taking the raw footage shot by a film crew and director and turning it into the final product. This means following an outline, script or shot list and assembling the footage into one cohesive video or film.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div data-aos="flip-right" data-aos-offset="200" data-aos-duration="800">
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Photo Edit</h2>
+                    <p>Photo editors review and select photos for promotion, publication, and dissemination. They identify relevant images, edit photos to make them more appealing, and arrange them in a suitable layout.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-----------------------------portfolio------------------------->
+    
+      <div id="portfolio" data-aos="fade-down" data-aos-offset="200">
+        <div class="container">
+            <h1 class="sub-titles">MY <span>WORK</span></h1>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/shopping.gif" alt="" >
+                    <div class="layer">
+                        <h1>Shopping website</h1>
+                        <p>One of Example for web design and this is shopping website </p>
+                        <a href="mywork/work1/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/work2.gif" alt="">
+                    <div class="layer">
+                        <h1>Creative Agency</h1>
+                        <p>One of Example for web design and this is creative agrncy website  </p>
+                        <a href="mywork/work2/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/work7.gif" alt="">
+                    <div class="layer">
+                        <h1>shoe website</h1>
+                        <p>One of Example for web design and this is shoe website  </p>
+                        <a href="mywork/work7/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/work10.gif" alt="">
+                    <div class="layer">
+                        <h1>Movie info app</h1>
+                        <p>One of Example for web design and this is movie info website  </p>
+                        <a href="mywork/work10/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/work12.gif" alt="">
+                    <div class="layer">
+                        <h1>Quiz web app</h1>
+                        <p>One of Example for web design and this is Quiz web app website  </p>
+                        <a href="mywork/work12/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
+                    <img src="mywork/work/work6.gif" alt="">
+                    <div class="layer">
+                        <h1>TO-do List</h1>
+                        <p>One of Example for web design and this is split the bill website</p>
+                        <a href="mywork/work6/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="mywork/work.html" class="btn">see more</a>
+        </div>
+      </div>
+
+      <!----------------contact--------------------->
+
+      <div id="contact" data-aos="fade-up" data-aos-offset="250">
+          <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT <span style="color: rgb(234, 175, 102);">ME</span></h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>lovecode628@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7305577494</p>
+                    <div class="social-link">
+                        <a href="https://www.facebook.com/pugal.pugalendhi.75?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/codewithpugazh?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pugazhendhi-k-a7141a255"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="btn2">
+                        <a href="">download cv</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form  action="https://formspree.io/f/xleyrdgw"
+                    method="POST">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="email" name="Email" placeholder="your email" required>
+                        <textarea name="Message" placeholder="your message" rows="6"></textarea>
+                        <button type="submit" class="btn3">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for( tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+        }
+
+        window.addEventListener("scroll",function(){
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0)
+        })
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+        
+        function openmenu(){
+            sidemenu.style.right ="-30px";
+            sidemenu.style.top ="-15px";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-250px"
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+   
+</body>
+</html>

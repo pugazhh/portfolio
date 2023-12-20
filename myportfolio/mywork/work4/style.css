@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+ overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ width: 100%;
+ background: url(uneven-sandstone-tile-wall-surface.jpg);
+ background-size: cover;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background: url(pexels-this-is-zun-1194025.jpg);
+    background-size: cover;
+    position: relative;
+    border-radius: 50%; 
+    border: 5px solid rgb(255, 255, 255);
+    outline: 40px solid rgb(248, 182, 2); 
+     
+}
+.container::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.number{
+    --rotate:0;
+    position: absolute;
+    height: 100%;
+    width: 100% ;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 30px;
+    color: rgb(255, 253, 252);
+    transform: rotate(var(--rotate));
+
+}
+
+.number::before{
+    --rotate:0;
+    content: "\25bc";
+    position: absolute;
+    top: 0;
+    height: 15px;
+    width: 10px;
+    margin-left: 0px;
+    font-size: 25px;
+    color: rgb(252, 198, 6);
+    transform: rotate(var(--rotate));
+
+}
+.point::before{
+    margin-left: 10px;
+    padding: 0%;
+}
+.num-1{--rotate:30deg;}
+.num-2{--rotate:60deg}
+.num-3{--rotate:90deg}
+.num-4{--rotate:120deg}
+.num-5{--rotate:150deg}
+.num-6{--rotate:180deg}
+.num-7{--rotate:210deg}
+.num-8{--rotate:240deg}
+.num-9{--rotate:270deg}
+.num-10{--rotate:300deg}
+.num-11{--rotate:330deg}
+.num-12{--rotate:360deg}
+
+
+.needle{
+    --rotate:20;
+    position: absolute;
+    height: 160px;
+    width: 15px;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translatex(-50%) rotate(calc(var(--rotate)*1deg));
+    background-color: red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.needle-hour{   
+    height: 160px;
+    width: 15px;
+    background: yellow;
+    --rotate:30;
+}    
+.needle-min{
+    height: 220px;
+    width: 15px;
+    background: #f4c004; 
+    --rotate:60;   
+}
+.needle-sec{   
+    height: 260px;
+    width: 6px;
+    background: #fbfbfb;
+    --rotate:120;
+}

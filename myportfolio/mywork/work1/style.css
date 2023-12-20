@@ -1,0 +1,263 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background: goldenrod;
+    padding: 15px;
+    border-bottom: 2px solid;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    gap: 5px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 50px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.menu ul li a ::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background: black;
+    transition: all .5s ease;
+    border-radius: 20px;
+}
+.menu ul li a:hover ::after{
+    width: 100%;
+}
+.cart{
+    display: flex;
+    position: relative;
+    font-size: 20px;
+    padding: 5px; 
+    cursor: pointer;  
+}
+.cart .cart-no{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(49, 49, 49);
+    font-size: 12px;
+    padding: 3px;
+    color: white;
+    border-radius: 15px;
+}
+
+/* -------------------main-content--------------------- */
+
+.main-content{
+    padding: 30px 0px;
+    margin: auto ;
+    background-color: rgb(67, 67, 67);
+    width: 100%;
+}
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.title span{
+    color: goldenrod;
+}
+.all-foods{
+    padding: 30px;
+}
+.food-box{
+    background: rgb(50, 50, 50);
+    width:fit-content;
+    display: grid;
+    border: 3px solid white;
+    overflow: hidden;
+    position: relative;
+}
+.food-box img{
+    object-fit: cover;
+    border-bottom: 4px solid black;
+    transition: transform .3s ease;   
+}
+.food-box img:hover{
+    transform: scale(1.1,1.1);
+}
+.food-detail{
+    background: goldenrod;
+    padding: 5px;
+}
+.food-rate{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+.cart-btn{
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    padding: 5px;
+    background: rgb(51, 50, 50);
+    color: goldenrod;
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.food-rate button:hover{
+    color: rgb(255, 183, 0);
+}
+
+/* all foods */
+.all-foods{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    row-gap: 40px;
+    place-items: center;
+}
+
+@media only screen and (max-width:520px){
+    .all-foods{
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+        padding: 0;
+        margin: 0;
+    }
+    .menu ul{
+        display: none;
+    }
+}
+
+/*----------------card-view-----------------*/
+body{
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.cart-view{
+    position: absolute;
+    top: 0;
+    right: -1000px;
+    height: 100%;
+    width: 350px;
+    overflow-x: hidden;
+    background: rgb(231, 231, 231);
+    z-index: 100;
+    border-left: 30px solid goldenrod;
+    outline: 15px solid rgb(49, 49, 49);
+    background-color: rgb(67, 67, 67);
+    transition: right .7s ease;
+}
+
+.cart-view-active{
+    right: 0;
+    overflow-x: hidden;
+    position: fixed;
+    overflow-y: auto;
+}
+.cart-title{
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 900;
+    border-bottom: 1px solid;
+    background: rgb(85, 85, 85);
+}
+.cart-title span{
+    color: goldenrod;
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    padding: 20px;
+    color: white;
+    border-bottom: 0.1px solid black;
+}
+
+.cart-item img{
+    border: 2px solid white;
+}
+.cart-item h4{
+    color: goldenrod;
+}
+.count{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.count span{
+    text-decoration: none;
+    height: 20px;
+    width: 30px;
+    background: goldenrod;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cart-remove{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: goldenrod;
+    font-size: 20px;
+    cursor: pointer;
+}
+.item-remove{
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+
+}
+.place-order{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: end;
+}
+.place-order button{
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: goldenrod;
+    color: white;
+    border: 1px solid ;
+}
+.place-order h4{
+    font-size: 20px;
+    color: white;
+}
+.place-order span{
+    color: goldenrod;
+}
+
+@media only screen and (max-width:800px){
+    header{
+        width: 100vw;
+    }
+
+}
